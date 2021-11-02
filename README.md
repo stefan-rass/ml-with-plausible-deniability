@@ -1,8 +1,7 @@
 # Supervised Machine Learning with Plausible Deniability
 Supplementary material for research work about machine learning with plausible deniability. The reference is:
 
-S. Rass, S. König, J. Wachter, M. Egger, M. Hobisch: *Supervised Machine Learning with Plausible Deniability*, Elsevier Computers & Security (in press)
-preprint available from arXiv:2106.04267v1 [cs.LG], [Online] https://arxiv.org/abs/2106.04267
+S. Rass, S. König, J. Wachter, M. Egger, M. Hobisch: *Supervised Machine Learning with Plausible Deniability*, Elsevier Computers & Security, available from https://www.sciencedirect.com/science/article/pii/S0167404821003308 or as a preprint from arXiv:2106.04267v1 [cs.LG], [Online] https://arxiv.org/abs/2106.04267, and 
 
 The code runs under GNU Octave (version 6.2.0), obtainable from https://www.octave.org)
 and configured for "x86_64-w64-mingw32"
