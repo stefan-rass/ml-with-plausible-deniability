@@ -1,4 +1,4 @@
-# ml-with-plausible-deniability
+# Supervised Machine Learning with Plausible Deniability
 Supplementary material for research work about machine learning with plausible deniability. The reference is:
 
 S. Rass, S. König, J. Wachter, M. Egger, M. Hobisch: *Supervised Machine Learning with Plausible Deniability*, Elsevier Computers & Security (in press)
