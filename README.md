@@ -12,12 +12,12 @@ optim, Version 1.6.0 (available from https://octave.sourceforge.io/optim/)
 
 The code consists of the following files, along with explanations of their purpose
 File									    Purpose
-experiments_local_opt.m   the main script; to load and run "as is" on the Octave prompt
-norm_v.m								  the norm constructed on the vector subspace V
-norm_w1.m								  the norm constructed on the vector subspace W_1
-seminorm_b.m							the seminorm b(x)
-crafted_norm.m						the final norm as constructed in the proof of Theorem 2
-execution_snapshot.txt	  a snapshot from an execution, added for convenience of the 
+- experiments_local_opt.m   the main script; to load and run "as is" on the Octave prompt
+- norm_v.m								  the norm constructed on the vector subspace V
+- norm_w1.m								  the norm constructed on the vector subspace W_1
+- seminorm_b.m							the seminorm b(x)
+- crafted_norm.m						the final norm as constructed in the proof of Theorem 2
+- execution_snapshot.txt	  a snapshot from an execution, added for convenience of the 
 										      reader, who may not want to download and install Octave. This
 										      is the data that was included in the paper
 										
