@@ -15,7 +15,7 @@ def parse(x):
 B = e = p = p2 = p_orig = p_true = rand_mul = x_decoy = x_training = y_decoy = y_training = None
 
 # Parse output from execution_snapshot.txt, and add them to (exported) locals
-with open('execution_snapshot.txt', 'r') as f:  # read file
+with open('execution_snapshot_v2.txt', 'r') as f:  # read file
     data = f.read()  # read only once
     # find all <Name> =\n\n<Matrix>\n
     for name, matrix in re.findall(r'(\w+) =\n\n([\d\s.-]+)\n', data):
