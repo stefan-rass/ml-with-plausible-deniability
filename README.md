@@ -41,7 +41,8 @@ M. Vogl
 Required packages: numpy, pandas, scipy
 
 File and purpose:
-* `execution_snapshot.txt`: a snapshot from running the `experiments_local_opt.m` with seed 41
+* `experiment_local_opt_v2.py`: `experiments_local_opt.m` with some extra debug prints and a seed variable
+* `execution_snapshot_v2.txt`: a snapshot from running the `experiments_local_opt_v2.m` with seed 41
 * `data.py`: reads the data from the execution snapshot
 * `functions.py`: all the `*norm*` functions, as well as a `linear_independence` and helpers for bias-convolution and the whole norm-error-functions and a main function to show the equivalence of various optimization variants
 * `experiment.py`: a port of `experiments_local_opt.m` to python with a SEED variable to reproduce (if False)
