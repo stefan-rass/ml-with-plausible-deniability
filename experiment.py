@@ -19,10 +19,10 @@ def experiment(seed: int | bool, x_dim: int, nr_records: int):
         y_training = conv_b(x_training, p_true) + -1 / 5 * np.log(gen.random(nr_records))
         x_decoy = gen.random((nr_records, x_dim))
         y_decoy = gen.random(nr_records)
-        e = B = p2 = None
+        p = e = B = p2 = None
         rand_mul = gen.random(1)
     else:  # no seed -> use the data from the original experiment and compare the results
-        from data import B, e, p2, p_true, rand_mul, x_decoy, x_training, y_decoy, y_training
+        from data import B, e, p, p2, p_true, rand_mul, x_decoy, x_training, y_decoy, y_training
 
     p1 = np.linalg.lstsq(a=prepend_ones(x_training), b=y_training, rcond=None)[0]
 
@@ -50,7 +50,7 @@ def experiment(seed: int | bool, x_dim: int, nr_records: int):
 
     if not seed:
         assert p2 is None or np.allclose(p_crafted, p2, atol=1)
-        print(pd.DataFrame({"p_true": p_true, "p_crafted": p_crafted, "p1": p1}), "\n")
+        print(pd.DataFrame({"p_true": p_true, "p_crafted": p_crafted, "p1": p1, "p": p}), "\n")
         y_train_rec_orig = conv_b(x_training, p1)
         y_train_rec_fit = conv_b(x_training, p_crafted)
         print(pd.DataFrame({"y_train": y_training, "y_train_rec_orig": y_train_rec_orig, "y_train_rec_fit": y_train_rec_fit}), "\n")

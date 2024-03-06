@@ -46,3 +46,4 @@ File and purpose:
 * `data.py`: reads the data from the execution snapshot
 * `functions.py`: all the `*norm*` functions, as well as a `linear_independence` and helpers for bias-convolution and the whole norm-error-functions and a main function to show the equivalence of various optimization variants
 * `experiment.py`: a port of `experiments_local_opt.m` to python with a SEED variable to reproduce (if False)
+* `experiment_failure.ipynb`: a jupyter notebook to analyze the failure cases of the optimization
